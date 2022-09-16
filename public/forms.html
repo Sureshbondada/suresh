@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Examples</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        body {
+            display:flex;
+            justify-content:center;
+            height:500px;
+            align-items:center;
+            font-weight:bold;
+            text-align:center;
+        }
+        form {
+            border:2px solid red;
+            padding:30px;
+            width:450px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2 class="bi bi-person-fill">Register User</h2>
+        <div class="mb-3">
+            <label class="form-label" for="UserName">UserName:</label>
+            <div>
+                <input type="text" class="form-control" name="UserName">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="Password">Password</label>
+            <div>
+                <input type="text" class="form-control" name="Password">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="City">Your City</label>
+            <div class="input-group"> 
+                <select class="form-select" name="City"></select>
+                <option>Select Your City</option>
+                <option>Hyderabad</option>
+                <option>Secunderabad</option>
+                <option>Delhi</option>
+            </div>     
+        </div>
+        <div class="form-switch">
+            <label class="form-label" for="Subscribe">Subscribe</label> <label>Yes</label>
+            <div>
+                <input type="checkbox" class="form-check-input" name="checkbox">
+            </div>
+        </div>
+        <div>
+            <button class="btn tbn-primary w-100">Register</button>
+        </div>
+    </form>
+</body>
+</html>
