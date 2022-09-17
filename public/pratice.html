@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styles</title>
+    <style>
+        li:nth-last-of-type(2n+4){
+            color:red;
+        }
+        li:first-child {
+            color:green;
+        }
+        li:last-child {
+            color:brown;
+        }
+        li:nth-of-type(3) {
+            color:aquamarine;
+        }
+        thead tr {
+            background-color:red;
+            color:white;
+        }
+        tbody tr {
+            background-color:blue;
+            color:white;
+        }
+        table {
+            border:2px solid orange;
+            box-shadow:4px 5px 5px lightgreen;
+        }
+        tbody tr:nth-child(even) {
+            color:black;
+        }
+        tbody tr:nth-child(odd) {
+            color:white;
+        }
+        thead tr:hover {
+            color:yellow;
+            background-color:lightseagreen;
+        }
+        tbody tr:hover {
+            background-color:black;
+            color:bisque;
+        }
+
+    </style>
+</head>
+<body>
+    <ol>
+        <li>piece-1</li>
+        <li>piece-2</li>
+        <li>piece-3</li>
+        <li>piece-4</li>
+        <li>piece-5</li>
+        <li>piece-6</li>
+        <li>piece-7</li>
+        <li>piece-8</li>
+        <li>piece-9</li>
+    </ol>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Brand</th>
+                <th>Price</th>
+                <th>Remark</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mobiles</td>
+                <td>Samsung</td>
+                <td>45000.00</td>
+                <td>No Reamrks</td>
+            </tr>
+            <tr>
+                <td>Mobiles</td>
+                <td>Remdi</td>
+                <td>19000.00</td>
+                <td>Referbished</td>
+            </tr>
+            <tr>
+                <td>Mobiles</td>
+                <td>Honor</td>
+                <td>16000.50</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Mobiles</td>
+                <td>Apple</td>
+                <td>85000.00</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Mobiles</td>
+                <td>Vivo</td>
+                <td>12000.00</td>
+                <td>Yes</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
