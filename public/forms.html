@@ -4,59 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms Examples</title>
+    <title>NETFLIX</title>
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <style>
         body {
+            background-image:url("../public/images/Netflixbanner.jpg");
+            background-size:cover;
+            color:white;
+            background-color:aqua;
+        } 
+        .brand-name {
+            color:red;
+            font-weight:bold;
+            font-size:30px;
+        }
+        header {
+            display:flex;
+            justify-content:space-between;
+            padding:30px;
+        }
+        .shade-background {
+            height:768px;
+            background-color:rgba(0,0,0,0.6);
+        }
+        .login-group {
+            display:flex;
+        }
+        select {
+            margin-right:20px;
+        }
+        section {
             display:flex;
             justify-content:center;
-            height:500px;
             align-items:center;
-            font-weight:bold;
             text-align:center;
+            height:400px;
         }
-        form {
-            border:2px solid red;
-            padding:30px;
-            width:450px;
+        h1 {
+            width:550px;
+            font-size:45px;
         }
+        section:hover {
+            background-color:rgba(0,0,210,0.5);
+            color:red;
+        }
+        main:hover {
+            background-color:bisque;
+            color:black;
+        }
+        select:hover {
+            color:green;
+            background-color:beige;
+        }
+
     </style>
 </head>
 <body>
-    <form>
-        <h2 class="bi bi-person-fill">Register User</h2>
-        <div class="mb-3">
-            <label class="form-label" for="UserName">UserName:</label>
-            <div>
-                <input type="text" class="form-control" name="UserName">
+    <div class="shade-background">
+        <header>
+            <div class="brand-name">
+                NETFLIX
             </div>
-        </div>
-        <div class="mb-3">
-            <label class="form-label" for="Password">Password</label>
-            <div>
-                <input type="text" class="form-control" name="Password">
+            <div class="login-group">
+                <div class="input-group">
+                    <span class="bi bi-globe input-group-text"></span>
+                    <select class="form-select">
+                        <option>Language</option>
+                        <option>తెలుగు</option>
+                        <option>English</option>
+                        <option>हिन्दी</option>
+                        <option>Urdu</option>
+                    </select>    
+                </div>
+                <button class="btn btn-danger">Signin</button>
             </div>
-        </div>
-        <div class="mb-3">
-            <label class="form-label" for="City">Your City</label>
-            <div class="input-group"> 
-                <select class="form-select" name="City"></select>
-                <option>Select Your City</option>
-                <option>Hyderabad</option>
-                <option>Secunderabad</option>
-                <option>Delhi</option>
-            </div>     
-        </div>
-        <div class="form-switch">
-            <label class="form-label" for="Subscribe">Subscribe</label> <label>Yes</label>
-            <div>
-                <input type="checkbox" class="form-check-input" name="checkbox">
-            </div>
-        </div>
-        <div>
-            <button class="btn tbn-primary w-100">Register</button>
-        </div>
-    </form>
+        </header>
+        <section>
+            <main>
+                <h1>Unlimited movies, TV shows and more.</h1>
+                <h3>Watch anywhere. Cancel anytime.</h3>
+                <p class="mt-4">Ready to watch? Enter your email to create or restart your membership.</p>
+                <div class="input-group input-group-lg">
+                    <input type="email" placeholder="Your email address" class="form-control">
+                    <button class="btn btn-danger">
+                        Get Started
+                        <span class="bi bi-chevron-right"></span>
+                    </button>
+                </div>
+            </main>
+        </section>
+    </div>
+    
+    
 </body>
 </html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        .form-control:optional+span {
+            display:none;
+        }
+        .form-control:required+span {
+            display:inline;
+            color:orange;
+        }
+        body {
+            box-shadow:2px 2px 3px red;
+            border:2px solid green;
+            font-weight:bold;
+        }
+        input[type="text"]:hover {
+            color:lightpink;
+            background-color:blue;
+        }
+
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>User Name</dt>
+        <dd><input type="text" class="form-control" required><span>*</span></dd>
+        <dt>Password</dt>
+        <dd><input type="text" class="form-control"><span>*</span></dd>
+        <dt>Mobile</dt>
+        <dd><input type="text" required class="form-control"><span>*</span></dd>
+    </dl>    
+</body>
+</html>

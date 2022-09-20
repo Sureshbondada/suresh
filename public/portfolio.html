@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color:red;
+            height:250px;
+            width:300px;
+            color:black;
+            border:1px solid greenyellow;
+            box-shadow:2px 2px 3px orange;
+            margin-top:20px;
+            border-top-color:white;
+            text-align:center;
+            
+        }
+        #UserName:hover {
+            color:white;
+            background-color:blueviolet;
+        }
+        #UserName:invalid+div {
+            color:red;
+            display:block;
+        }
+        #UserName:valid+div {
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>UserName</dt>
+        <dd>
+            <input type="text" id="UserName" required pattern="[A-Z]{4,10}">
+            <div>UserName is required and uppercase 4 to 10 chars only</div>
+        </dd>
+    </dl>
+</body>
+</html>

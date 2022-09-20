@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inox Movies</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        #span {
+            background-color:black;
+            color:white;
+            width:300px;
+        }
+        nav {
+            position:sticky;
+            top:0px;
+        }
+        form-select:hover {
+            background-color:black;
+            color:white;
+        }
+        select:hover {
+            background-color:black;
+            color:white;
+            border:2px solid red;
+            border-radius:3px 4px 4px orange;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../public/images/inoxBanner.jpg" width="100%">
+
+    </header>
+    <nav>
+        <div class="bg-dark text-white" id="span">
+            <span class="bg-danger text-white">QUICK BOOKING</span>
+            <span class="bg-dark text-white">By Movies</span>
+            <span class="">|</span>
+            <span class="text-warning">By Cinema</span>           
+        </div>
+        <div class="bg-dark text-white d-flex p-2 justify-content-between">
+            <div class="movies">
+                <select class="form-select">
+                    <option>Select Movies</option>
+                    <option>Don</option>
+                    <option>Vikram</option>
+                    <option>Bachelor</option>
+                </select>
+            </div>
+            <div>
+                <select class="form-select"><option>Select Cinemas</option></select>
+            </div>
+            <div>
+                <select class="form-select"><option>Select Date</option></select>
+            </div>
+            <div>
+                <select class="form-select"><option>Select Timings</option></select>
+            </div>
+            <div>
+                <select class="form-select"><option>Select Seats</option></select>
+            </div>
+            <div>
+                <button class="btn tbn-danger">Book</button>
+            </div>
+        </div>
+    </nav>
+    <section class="mt-4">
+
+    </section>
+</body>
+</html>
