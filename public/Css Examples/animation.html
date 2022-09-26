@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes netflix {
+            from {
+            height:400px;
+            width:400px;
+            transform:rotate(360deg);
+            margin-left:120px;
+
+        }
+        to {
+            height:100px;
+            width:150px;
+            margin-left:0;
+            transform:scale(1);
+            transform:rotate(0deg);
+
+        }
+        }
+        @keyframes text {
+            from {
+                font-size:100px;
+                margin-left:120px;
+            }
+            to {
+                font-size:30px;
+                margin-left:0px;
+            }
+        }
+
+
+        img {
+            background-color:crimson red;
+            color:bisque;
+            animation-name:netflix;
+            animation-duration:5s;
+            animation-iteration-count:infinite;
+
+        }
+        img:hover {
+            animation-duration:2s;
+            animation-direction:alternate-reverse;
+            animation-timing-function:steps(3);
+            animation-iteration-count:infinite;
+            background-color:bisque;
+            transform:matrix3d(2,0,0,2,100px,100px);
+            
+        }
+        h2 {
+            animation-duration:5s;
+            animation-iteration-count:infinite;
+            animation-name:text;
+            font-size:30px;
+            animation-direction:alternate;
+        }
+        body {
+            height:500px;
+            display:flex;
+            align-items:center;
+            overflow:hidden;
+        }
+        h2:hover {
+            background-color:chocolate;
+            text-decoration:underline;
+            color:azure;
+            font-variant:small-caps;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Netflix</h2>
+        <img src="../../public/images/Netflixbanner.jpg" width="100px" height="100px" onmousemove="screenTop">
+    </div>
+</body>
+</html>

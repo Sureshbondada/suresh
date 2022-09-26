@@ -1,0 +1,40 @@
+.container {
+  border: 2px solid gray;
+  padding: 10px;
+  margin-left: 50px;
+  background-color: red;
+}
+.container h2 {
+  color: red;
+  background-color: limegreen;
+  text-align: center;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+.container h2:hover {
+  text-decoration: underline;
+  color: crimson;
+  background-color: bisque;
+  transform: rotate(360deg);
+  font-size: 30px;
+}
+.container p {
+  color: orange;
+  font-style: oblique;
+  font-weight: bolder;
+}
+.container p:hover {
+  color: pink;
+  background-color: black;
+  font-variant: small-caps;
+  box-shadow: 3px 3px 4px chocolate;
+  align-items: center;
+  margin-right: 200px;
+}
+.container d {
+  color: black;
+  background-color: whitesmoke;
+  font-size: larger;
+}
+
+/*# sourceMappingURL=effects.css.map */
